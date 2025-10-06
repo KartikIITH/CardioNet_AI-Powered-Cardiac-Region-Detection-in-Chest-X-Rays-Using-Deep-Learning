@@ -8,7 +8,7 @@ This project demonstrates the application of advanced artificial intelligence an
 📊 **Data**
 Dataset Source: Derived from the RSNA Pneumonia Detection Challenge ([Kaggle link]), using 496 X-ray images annotated with custom heart bounding boxes.
 
-**Labels:** X-ray images are paired with bounding box coordinates (xmin, xmax, ymin, ymax), enabling supervised regression training for object localization.
+🩻 **Labels:** X-ray images are paired with bounding box coordinates (xmin, xmax, ymin, ymax), enabling supervised regression training for object localization.
 
 💡 **Medical Background**
 Cardiac detection in X-rays is instrumental for evaluating heart size and position, aiding in the identification of conditions like cardiomyopathy and possible cardiac displacement due to pneumothorax or atelectasis.
@@ -78,6 +78,7 @@ Prepare Data: Gather and annotate X-ray images with heart bounding boxes as per 
 🌐 **Practical Application** (project bridges academia and healthcare domain for scalable deployability)
 
 🔭 **Future Work**
+
 Scale up to larger datasets and diverse X-ray modalities.
 
 Adapt for multi-class detection or integration into broader CADx systems.
