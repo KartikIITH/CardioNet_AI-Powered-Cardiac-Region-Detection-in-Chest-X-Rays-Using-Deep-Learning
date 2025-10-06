@@ -1,6 +1,5 @@
 # CardioNet_AI-Powered-Cardiac-Region-Detection-in-Chest-X-Rays-Using-Deep-Learning
 
-AI-Powered Cardiac Region Detection in Chest X-Rays Using Deep Learning (ResNet18)
 Overview
 This project demonstrates the application of advanced artificial intelligence and deep learning for medical image analysis. The core objective is to detect and localize the cardiac region in chest X-ray images by predicting bounding boxes around the heart. Built using a custom-labeled dataset and a modified ResNet18 architecture, this work integrates robust data engineering, augmentation, and modern convolutional neural networks for a real-world healthcare problem.
 
@@ -35,8 +34,23 @@ Rotation (-10°, +10°)
 
 Translation (±10 px)
 
-Z-normalization
+Z-normalization formula:
 
+x
+n
+o
+r
+m
+=
+x
+−
+μ
+σ
+x 
+norm
+ = 
+σ
+x−μ
  
 Model Architecture & Training
 Architecture: ResNet18, adapted to:
@@ -44,11 +58,41 @@ Architecture: ResNet18, adapted to:
 Take single-channel (grayscale) X-ray images as input.
 
 Output four values corresponding to the bounding box 
-
+(
+x
+m
+i
+n
+,
+x
+m
+a
+x
+,
+y
+m
+i
+n
+,
+y
+m
+a
+x
+)
+(xmin,xmax,ymin,ymax).
 
 Loss Function: Mean Squared Error (MSE) for regression of bounding box coordinates.
 
-Optimizer: Adam 
+Optimizer: Adam (learning rate 
+1
+×
+10
+−
+4
+1×10 
+−4
+ ).
+
 Training: 50 epochs with robust augmentation pipeline and PyTorch-based training loop.
 
 Results
@@ -80,4 +124,3 @@ Scale up to larger datasets and diverse X-ray modalities.
 Adapt for multi-class detection or integration into broader CADx systems.
 
 Further improvement with ensemble techniques and advanced loss functions.
-
