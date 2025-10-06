@@ -1,6 +1,7 @@
 # 🚀CardioNet_AI-Powered-Cardiac-Region-Detection-in-Chest-X-Rays-Using-Deep-Learning
 
 🚀 **CardioNet:** AI-Powered Cardiac Region Detection in Chest X-Rays Using Deep Learning
+
 🧠 **Overview**
 This project demonstrates the application of advanced artificial intelligence and deep learning for medical image analysis. The core objective is to detect and localize the cardiac region in chest X-ray images by predicting bounding boxes around the heart. Built using a custom-labeled dataset and a modified ResNet18 architecture, this work integrates robust data engineering, augmentation, and modern convolutional neural networks for a real-world healthcare problem.
 
