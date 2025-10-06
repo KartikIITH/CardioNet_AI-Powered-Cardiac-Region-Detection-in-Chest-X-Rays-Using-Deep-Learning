@@ -17,8 +17,9 @@ Early and automated localization supports faster diagnosis, reducing risks of se
 🎯 **Task**
 Build an AI system to predict the bounding box surrounding the heart in each chest X-ray image.
 
-🛠️ **Methodology**
-🏗️ Data Preprocessing & Augmentation
+🛠️ **Methodology** 
+
+🏗️ **Data Preprocessing & Augmentation**
 Resize images from 1024x1024 to 224x224 pixels (labels are scaled accordingly).
 
 Standardize pixel values to the [0][1] range and normalize using dataset mean and standard deviation.
@@ -35,10 +36,11 @@ Data Augmentation applied identically to both images and bounding boxes:
 
 🔸 Translation (±10 px)
 
-**Z-normalization is applied for better convergence.
-**
+**Z-normalization is applied for better convergence.**
+
+
 🔬 **Model Architecture & Training**
-**Architecture:** ResNet18, adapted to:
+**Architecture:**  ResNet18, adapted to:
 
 🖤 Take single-channel (grayscale) X-ray images as input.
 
@@ -46,7 +48,7 @@ Data Augmentation applied identically to both images and bounding boxes:
 
 **Loss Function:** Mean Squared Error (MSE) for regression of bounding box coordinates.
 
-**Optimizer: **Adam (lr=1e-4)
+**Optimizer:** Adam (lr=1e-4)
 
 **Training:** 50 epochs with robust augmentation pipeline and PyTorch-based training loop.
 
@@ -65,13 +67,14 @@ Prepare Data: Gather and annotate X-ray images with heart bounding boxes as per 
 **Evaluate Output:** Validate predicted bounding boxes against ground truth using MSE or IoU metrics.
 
 🛡️ **Key Skills Highlighted**
-🤖 Deep Learning (PyTorch: ResNet18 customization, loss design, optimizer tuning)
 
-🩺 Medical Image Processing (using image augmentation and normalization)
+🤖 **Deep Learning** (PyTorch: ResNet18 customization, loss design, optimizer tuning)
 
-🛤️ End-to-End AI Workflow (data cleaning, annotation, custom dataset pipelines, regression on bounding boxes)
+🩺 **Medical Image Processing** (using image augmentation and normalization)
 
-🌐 Practical Application (project bridges academia and healthcare domain for scalable deployability)
+🛤️ **End-to-End AI Workflow** (data cleaning, annotation, custom dataset pipelines, regression on bounding boxes)
+
+🌐 **Practical Application** (project bridges academia and healthcare domain for scalable deployability)
 
 🔭 **Future Work**
 Scale up to larger datasets and diverse X-ray modalities.
